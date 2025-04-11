@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <h1>Bem-vindo à Concessionária de Carros</h1>
-      <Link href="/listaCarros">
-        <button>Ver Lista de Carros</button>
+      <h1>Mercadinho</h1>
+      <Link href="/listaProdutos">
+        <button>Ver Lista de Produtos</button>
       </Link>
     </div>
   );
