@@ -1,23 +1,18 @@
-import { produtosData } from "@/data/ProdutosData";
-import Link from "next/link";
+//IMPORTAÇÕES
 
+import { Produto } from "@/types/produto"; 
+import styles from "./DetalheProduto.module.css";
 
-//Lista de Produtos Disponíveis
-export default function ListaProdutos() {
+//FUNÇÃO PARA OS DETALHES DE CADA PRODUTO
+export default function DetalheProduto({ produto }: { produto: Produto }) {
   return (
-    <div>
-      <h1>Produtos Disponíveis</h1>
-      <ul>
-        {produtosData.map((produto) => (
-          <li key={produto.id}>
-            <img src={produto.foto} alt={produto.nome} width={200} />
-            <h2>{produto.nome}</h2>
-            <Link href={`/DetalheProduto/${produto.id}`}>
-              <button>Ver Detalhes</button>
-            </Link>
-          </li>
-        ))}
-      </ul>
+    <div className={styles.container}>
+      <h1 className={styles.title}>{produto.title}</h1>
+      <img src={produto.thumbnail} alt={produto.title} className={styles.image} />
+      <p className={styles.text}>{produto.description}</p>
+      <p className={styles.label}><strong>Preço:</strong> R$ {produto.price}</p>
+      <p className={styles.label}><strong>Categoria:</strong> {produto.category}</p>
+      <p className={styles.label}><strong>Avaliação:</strong> {produto.rating}</p>
     </div>
   );
 }

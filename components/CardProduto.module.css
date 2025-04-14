@@ -1,0 +1,39 @@
+.card {
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    color: #e2e8f0;
+  }
+  
+  .image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    margin: 12px 0 4px;
+  }
+  
+  .price {
+    color: #3b82f6;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #2563eb;
+  }
+  

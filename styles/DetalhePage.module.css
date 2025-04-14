@@ -1,0 +1,25 @@
+.page {
+    background-color: #0f172a;
+    min-height: 100vh;
+    padding: 32px;
+    color: #e2e8f0;
+  }
+  
+  .backButtonWrapper {
+    text-align: center;
+    margin-top: 24px;
+  }
+  
+  .backButton {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .backButton:hover {
+    background-color: #2563eb;
+  }
+  
